@@ -15,10 +15,10 @@ with open("1.json", "r") as file:
 data["products"].extend(products["products"])
 
 for i in data["products"]:
-    print("Название: ", i["name"])
+    print("Имя: ", i["name"])
     print("Цена: ", i["price"])
     print("Вес: ", i["weight"])
-    print("В наличии" if i["available"] else "Нет в наличии!", "\n")
+    print("Имеется" if i["available"] else "Нет в наличии!", "\n")
 
 with open("1.json", "w") as file:
     json.dump(data, file, indent=4, ensure_ascii=False)

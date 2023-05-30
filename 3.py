@@ -10,6 +10,6 @@ with open("en-ru.txt", "r") as file:
             else:
                 d[i] = en_w
 
-with open("ru-en.txt", "w") as file:
+with open('ru-en.txt', "w") as file:
     for i in sorted(d.keys()):
         file.writelines(f"{i} - {d[i]}\n")
